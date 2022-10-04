@@ -1,0 +1,126 @@
+/* .post_border{
+    border-radius:15px;
+    background:whitesmoke;
+    width:150px;
+    
+    margin-bottom:10%;
+
+}
+.myimage{
+    width:100px;
+    height:100px;
+} */
+
+.instagramcard{
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+    border-radius:15px;
+    margin-bottom:5%;
+	/* width: 100%; */
+	max-width: 600px;
+
+	/* margin: auto; */
+}
+
+.instagramcardheader{
+	padding: 20px;
+	height: 40px;
+}
+
+.instagramcarduserimage{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+.instagramcard h5{
+
+margin-top:-7%;
+margin-left:10%;
+
+
+}
+.instagramcardtime{
+	float: right;
+	width: 80px;
+	padding-top:10px;
+	text-align: right;
+	color: #999;
+}
+
+.instagramcardusername{
+	margin-left:20px;
+	font-weight:bold;
+  color: #262626;
+}
+
+.instagramcardcontent{
+  padding: 20px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+.instagramcardcontentuser{
+  font-weight: bold;
+  color: #262626;
+}
+
+
+
+.comments{
+  color:#999;
+}
+
+.usercomment{
+  color: #003569;
+}
+
+.instagramcardfooter{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 0px;
+ 
+}
+
+
+.footeractionicons{
+  font-size: 16px;
+  color: #ccc;
+}
+
+.commentsinput{
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+.instagramcardimage>img{
+    width:595px !important;
+    height:400px;
+    margin-top:5%;
+    
+}
+.investbutton{
+    background:#111;
+    color:#ccc;
+align-items:center;
+margin-left:220%;
+position:relative;
+border-radius:15px;
+width:100px;
+height:50px;
+}
+.investbutton:hover{
+  background:#999;
+  color:#111;
+  border:1px solid #999;
+}

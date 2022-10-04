@@ -1,0 +1,30 @@
+.leftbgdesign{
+    border-radius:15px;
+    background:white;
+    width:270px;
+    height:670px;
+    position:fixed;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.lightcontainer{
+    z-index:-1;
+}
+.userarea{
+    border-radius:50%;
+    padding-top:5%;
+    background:rgb(218, 211, 211);
+    margin-left:25%;
+    width:110px;
+    height:110px;
+    position:relative;
+    z-index:100;
+   
+}
+.userarea >img{
+    width:100px;
+    height:90px;
+    margin-left:3%;
+    position:relative;
+}

@@ -1,0 +1,103 @@
+.investapp{
+  width: 100%;
+  height:100vh;
+  
+  background:#111;
+}
+.mypayform{
+  background:white !important;
+  width: 40%;
+  height:75vh;
+ margin-left:29%;
+margin-top:10%;
+  position: absolute;
+  border-radius:5px;
+ 
+}
+.investapp  input[type=text]{
+  border:none;
+  outline:none;
+  width:400px;
+  border-bottom:1px solid black;
+  font-size:17pt;
+  color:black;
+  margin-left:10%;
+  margin-top:5%;
+}
+.investapp  input[type=tel]{
+  border:none;
+  margin-top:5%;
+  outline:none;
+  width:400px;
+  border-bottom:1px solid black;
+  font-size:17pt;
+  color:black;
+  margin-left:10%;
+}
+.investapp  input[type=email]{
+  border:none;
+  outline:none;
+  width:400px;
+  border-bottom:1px solid black;
+  font-size:17pt;
+  color:black;
+  margin-left:10%;
+  margin-top:5%;
+}
+.investapp  input[type=password]{
+  border:none;
+  outline:none;
+  width:400px;
+  border-bottom:1px solid black;
+  font-size:17pt;
+  color:black;
+  margin-left:10%;
+  margin-top:5%;
+}
+.investapp button{
+ width:200px;
+ margin-top:10%;
+ margin-left:30%;
+ background:limegreen;
+ border-radius:10px;
+ height:40px;
+ border:1px solid limegreen;
+ color:white;
+}
+.topbar{
+    
+  top:0;
+  left:0;
+  right:0;
+  
+  background:white;
+  display:flex;
+  position:absolute;
+  position:fixed;
+  width:100%;
+  height:8%;
+}
+.poolLogo >video{
+  width:50px;
+}
+.myicons{
+  display:flex;
+  margin-left:33%;
+  justify-content:space-between;
+}
+.myicons>img{
+  width:30px;
+  margin-right:20px;
+
+  
+}
+.logout_button{
+  width:100px;
+  height:50px;
+  background:#111;
+  color:#ccc;
+  margin-left:90%;
+  
+  position:absolute;
+  
+}

@@ -1,0 +1,83 @@
+body{
+    /* background:rgb(77,81,108)!important; */
+    width:100%;
+    background:#111 !important;
+}
+.myfeed{
+    display:flex;
+    /* background:rgb(248, 234, 234); */
+    /* background:#111; */
+    background:rgb(37, 36, 36);
+    width:87%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px !important;
+}
+.postarea{
+    flex:0.5;
+    
+  
+    margin-top:5%;
+    /* position:relative; */
+}
+.addposts{
+    flex:0.3;
+    
+    position:fixed;
+    position:relative;
+    margin-top:5%;
+}
+.trending{
+    flex:0.2;
+    margin-top:5%;
+    position:relative;
+    
+   
+    position:relative;
+    /* position:fixed;
+    margin-top:5%;
+    margin-right:50%; */
+    
+}
+.logout_button{
+    width:100px;
+    height:50px;
+    background:#111;
+    color:#ccc;
+    margin-left:90%;
+    
+    position:absolute;
+    
+}
+.topbar{
+    
+    top:0;
+    left:0;
+    right:0;
+    
+    background:white;
+    display:flex;
+    position:absolute;
+    position:fixed;
+    width:100%;
+    height:8%;
+}
+.poolLogo >video{
+    width:50px;
+}
+.myicons{
+    display:flex;
+    margin-left:33%;
+    justify-content:space-between;
+}
+.myicons>img{
+    width:30px;
+    margin-right:20px;
+  
+    
+}
+.activehome{
+   background:rgb(175, 175, 197);
+   
+   width:60px;
+}

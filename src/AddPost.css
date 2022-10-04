@@ -1,0 +1,13 @@
+.postbox{
+    width:250px;
+    margin-left:-1%;
+    position:relative;
+}
+.postbox button{
+    background:lightblue;
+    width:150px;
+    border-radius:10px;
+    border:1px solid lightblue;
+    margin-top:5%;
+    margin-left:8%;
+}
