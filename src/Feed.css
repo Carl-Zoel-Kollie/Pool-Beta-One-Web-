@@ -3,6 +3,9 @@ body{
     width:100%;
     background:#111 !important;
 }
+.feed_mobile{
+    display:none;
+}
 .myfeed{
     display:flex;
     /* background:rgb(248, 234, 234); */
@@ -76,8 +79,92 @@ body{
   
     
 }
+.chaticons{
+  width:30px;
+margin-top:59%;
+margin-left:-30%;
+}
 .activehome{
    background:rgb(175, 175, 197);
    
    width:60px;
+}
+
+/* feed mobile media query 480px */
+@media(max-width:1000px){
+    .coverarea{
+        display:none;
+    }
+    .feed_mobile{
+        display:flex;
+        background:#111 !important;
+    }
+    .bottombar{
+        background:white !important;
+        bottom:0;
+        left:0;
+        right:0;
+        position:fixed;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content:space-between;
+        width:100%;
+        height:5vh;
+        z-index:1;
+    }
+    .bottombar img{
+        width:30px;
+    }
+    .mobile_navbar{
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        background:White  !important;
+        width:100%;
+        height:5vh !important;
+    }
+    .mobile_navbar h1{
+        left:0;
+    }
+    .logout_button {
+        width:35% !important;
+       margin-left:73% !important;
+       top:0 !important;
+       background:transparent !important;
+       color:black !important;
+       font-size:10pt !important;
+    }
+    .this_feed{
+        display:flex;
+        flex-direction: column;
+        margin-top:8%;
+        width:100%;
+        height:100vh;
+        
+        margin-bottom:10%;
+        /* position:fixed; */
+    }
+    .makemobilepost{
+        background:whitesmoke;
+        flex:2;
+        width:100%;
+        margin-top:2%;
+        height:20vh;
+        
+     
+        
+        
+    }
+    .makemobilepost h5{
+        text-align: center;
+    }
+    .postsmobile{
+        background:#111;
+        width:100%;
+        margin-top:11%;
+        flex:4;
+      
+    }
+   
 }

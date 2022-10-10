@@ -33,8 +33,9 @@ const payWithPaystack=(e)=>{
 
 }
     return(
+      <div>
         <div className="investapp">
-          <div className="topbar">
+          {/* <div className="topbar">
    
    <video src="poollogowhite.mp4"className="poolLogo" muted loop AutoPlay/>
        <h2>POOL</h2>
@@ -47,7 +48,7 @@ const payWithPaystack=(e)=>{
        </div>
        <button className="logout_button" 
    onClick={()=>{logOut(auth)}}>Log Out</button> 
-   </div>
+   </div> */}
           <div className="mypayform">
             <h3 className="text-center">Invest in  Invention</h3>
              <form id="paymentForm" >
@@ -102,6 +103,12 @@ const payWithPaystack=(e)=>{
 </form>
         </div>
         </div>
+
+        <div className="pay_mobile">
+          <h1>For mobile</h1>
+        </div>
+        </div>
+
         
 
     )

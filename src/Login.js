@@ -22,8 +22,9 @@ const Login = () => {
     
     }
     return ( 
+        <div>
         <div className="login">
-            {/* <video src="poolbgvideo.mp4" muted loop autoPlay/> */}
+           
             <div className="signin_grid">
                 <div className="grid_one">
                     <video src="poollogo.mp4" muted loop autoPlay/>
@@ -32,7 +33,7 @@ const Login = () => {
                 </div>
                  <div className="grid_three">
 <h1>Log In</h1>
-{error && <div>{error}</div>}
+{error && <div className="login_errorbox">{error}</div>}
 <form onSubmit={handleSubmit}>
 {/* <input type="text" className="input_line" placeholder="Username"></input>
 <br/> */}
@@ -56,6 +57,33 @@ onChange={(e)=>setPassword(e.target.value)}
 
             </div>
         </div>
+        <div className="login_mobile">
+        <h1>Pool</h1>
+        <br></br>
+      <video src="poollogo.mp4" muted loop autoPlay/>
+      <br></br>
+    
+        {error && <div className="login_errorbox">{error}</div>}  
+            {/* <h1>Sign Up</h1> */}
+            <form onSubmit={handleSubmit}>
+                 
+            <input type="text" className="input_line" 
+onChange={(e)=>setEmail(e.target.value)}
+placeholder="E-mail Address"></input>
+                <br/>
+                <input type="password" className="input_line"
+onChange={(e)=>setPassword(e.target.value)}
+ placeholder="Password"></input>
+                <br/>
+                <button className="button">Log In</button>
+                <br></br>
+                <Link to ="/" >  <h3>Not on Pool? Create An Account </h3></Link>
+              
+                </form>
+    </div>
+     
+        </div>
+        
      );
 }
  

@@ -7,61 +7,61 @@
 .mypayform{
   background:white !important;
   width: 40%;
-  height:75vh;
+  height:100vh;
  margin-left:29%;
-margin-top:10%;
+
   position: absolute;
   border-radius:5px;
  
 }
 .investapp  input[type=text]{
-  border:none;
-  outline:none;
-  width:400px;
-  border-bottom:1px solid black;
-  font-size:17pt;
-  color:black;
-  margin-left:10%;
-  margin-top:5%;
+  width: 100%;
+    padding: 10px;
+    outline: none;
+    background:rgb(245, 240, 240);
+    border-radius:12px;
+    height:70px;
+    margin-top:5%;
+    border:1px solid rgb(245, 240, 240);
 }
 .investapp  input[type=tel]{
-  border:none;
-  margin-top:5%;
-  outline:none;
-  width:400px;
-  border-bottom:1px solid black;
-  font-size:17pt;
-  color:black;
-  margin-left:10%;
+  width: 100%;
+    padding: 10px;
+    outline: none;
+    background:rgb(245, 240, 240);
+    border-radius:12px;
+    height:70px;
+    margin-top:5%;
+    border:1px solid rgb(245, 240, 240);
 }
 .investapp  input[type=email]{
-  border:none;
-  outline:none;
-  width:400px;
-  border-bottom:1px solid black;
-  font-size:17pt;
-  color:black;
-  margin-left:10%;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background:rgb(245, 240, 240);
+  border-radius:12px;
+  height:70px;
   margin-top:5%;
+  border:1px solid rgb(245, 240, 240);
 }
 .investapp  input[type=password]{
-  border:none;
-  outline:none;
-  width:400px;
-  border-bottom:1px solid black;
-  font-size:17pt;
-  color:black;
-  margin-left:10%;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background:rgb(245, 240, 240);
+  border-radius:12px;
+  height:70px;
   margin-top:5%;
+  border:1px solid rgb(245, 240, 240);
 }
 .investapp button{
  width:200px;
  margin-top:10%;
  margin-left:30%;
- background:limegreen;
+ background:#111;
  border-radius:10px;
  height:40px;
- border:1px solid limegreen;
+ border:1px solid #111;
  color:white;
 }
 .topbar{

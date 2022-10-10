@@ -86,6 +86,7 @@ const AddPost = () => {
         );
       };
     return ( 
+      <div>
         <div className="border p-3 mt-3 bg-light postbox" style={{position:"fixed"}}>
             <h5>Post your invention</h5>
             <label>Name of inventor</label>
@@ -142,6 +143,52 @@ const AddPost = () => {
             {/* <img src="send.svg"/> */}
             <h6>Post</h6>
           </button>
+        </div>
+        
+        <div className="addpostmobile">
+          
+        <input type="text" name="username"
+        placeholder="Inventor"
+            onChange={(e)=>handleChange(e)} 
+            value={formData.username}
+            className="form-control "/>
+       <input type="text" name="title"
+       placeholder="Invention"
+            onChange={(e)=>handleChange(e)} 
+            value={formData.title}
+            className="form-control"/>
+      <input
+             type="text" 
+            name="funding" 
+            placeholder="Funding"
+            onChange={(e)=>handleChange(e)} 
+             value={formData.funding}
+             className="form-control"
+             />
+         <input 
+        type="file"
+        name="image"
+        accept="image/*"
+        className="form-control"
+        onChange={(e) => handleImageChange(e)}
+
+        />
+     
+         <textarea name="description"
+         placeholder="Description"
+          value={formData.description}
+          onChange={(e)=>handleChange(e)} 
+           className="form-control descriptionbox"/>
+           <br></br>
+           <button
+
+onClick={handlePublish}
+>
+{/* <img src="send.svg"/> */}
+<h6>Post</h6>
+</button>
+          
+        </div>
         </div>
       )}
 export default AddPost; 

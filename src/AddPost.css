@@ -11,3 +11,40 @@
     margin-top:5%;
     margin-left:8%;
 }
+.addpostmobile{
+    display:none;
+}
+@media(max-width:1000px){
+    .postbox{
+        display:none;
+    }
+    .addpostmobile{
+        display:grid;
+        background:transparent;
+        width:100%;
+        position:Relative;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height:100%;
+    }
+    .form-control{
+        background:rgb(243, 243, 243) !important;
+       border-radius:0px solid white !important;
+       font-size:8.3pt  !important;
+       
+    }
+    .descriptionbox{
+        
+        width:337% !important;
+        position:relative!important;
+        border:none !important;
+        border-radius: none !important;
+    }
+    .addpostmobile button{
+        z-index:1;
+        margin-left:138% !important;
+        background:rgb(243, 243, 243) !important;
+        width:60%;
+       
+    }
+    
+}

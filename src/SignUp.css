@@ -8,6 +8,19 @@
     height:100vh;
 
 }
+.login_errorbox{
+  background:linear-gradient(90deg, rgba(9,9,121,0.7) 45%, rgba(121,171,181,0.7) 88%);
+  color:white;
+margin-top:5%;
+  height:5%;
+  width:50%;
+  position:absolute;
+
+  
+}
+.login_mobile{
+  display:none;
+}
 .signin_grid{
     display:flex;
     width:70vw;
@@ -182,3 +195,604 @@ margin-top:7%;
     margin-top:3%;
 
 }
+
+
+
+@media(max-width:480px){
+  .login{
+    display:none;
+  }
+  .login_mobile{
+    display:flex;
+   background:rgba(69,110,125,0.7)!important;
+   height:100vh;
+   width:100%;
+  }
+  .login_mobile video{
+   
+    height:30%;
+  border-radius: 50%;
+    position:relative;
+    margin-left:25%;
+    z-index:1000;
+    margin-top:15%;
+   
+  }
+  .login_errorbox{
+    background:linear-gradient(90deg, rgba(9,9,121,0.7) 45%, rgba(121,171,181,0.7) 88%);
+    color:white;
+ 
+    height:5%;
+    width:100%;
+    position:absolute;
+    margin-top:80%;
+   
+  }
+  .input_line{
+    border:none;
+   position:relative;
+    border-bottom:4px solid white;
+    background-color: transparent;
+resize: none;
+outline: none;
+font-size:1.5em;
+width:100% !important;
+
+color:white;
+
+margin-bottom:5%;
+margin-left:18% !important;
+
+}
+.login_mobile > form{
+  
+
+  margin-top:87%;
+  position:absolute;
+}
+
+.login_mobile .button {
+  z-index:100;
+  margin-left:40%;
+ margin-top:17%;
+  width:50%;
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgb(2, 53, 65) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+  .login_mobile.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.login_mobile .button:hover, .homescreen .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.login_mobile .button:hover::before, .homescreen .button:focus::before {
+  opacity: 1;
+}
+
+.login_mobile .button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.login_mobile .button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.login_mobile h3{
+  /* margin-left: 5%;
+margin-top:65%; */
+bottom:8%;
+
+left:5%;
+position:fixed;
+}
+.login_mobile h1{
+  font-family:"Rubik Mono One", "sans-serif";
+  color:white;
+  margin-left:34%;
+  position:Absolute;
+  font-size:2em;
+ 
+}
+}
+
+/* media query for 300px */
+
+@media(max-width:300px){
+  .login{
+    display:none;
+  }
+  .login_mobile{
+    display:flex;
+   background:rgba(69,110,125,0.7)!important;
+   height:100vh;
+   width:100%;
+  }
+  .login_mobile video{
+   
+    height:30%;
+  border-radius: 50%;
+    position:relative;
+    margin-left:25%;
+    z-index:1000;
+    margin-top:15%;
+   
+  }
+  .login_errorbox{
+    background:linear-gradient(90deg, rgba(9,9,121,0.7) 45%, rgba(121,171,181,0.7) 88%);
+    color:white;
+ 
+    height:5%;
+    width:100%;
+    position:absolute;
+    margin-top:80%;
+   
+  }
+  .input_line{
+    border:none;
+   position:relative;
+    border-bottom:4px solid white;
+    background-color: transparent;
+resize: none;
+outline: none;
+font-size:1.5em;
+width:88% !important;
+
+color:white;
+
+margin-bottom:5%;
+margin-left:5% !important;
+
+}
+.login_mobile > form{
+  
+
+  margin-top:87%;
+  position:absolute;
+}
+
+.login_mobile .button {
+  z-index:100;
+  margin-left:30%;
+ margin-top:17%;
+  width:50%;
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgb(2, 53, 65) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+  .login_mobile.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.login_mobile .button:hover, .homescreen .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.login_mobile .button:hover::before, .homescreen .button:focus::before {
+  opacity: 1;
+}
+
+.login_mobile .button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.login_mobile .button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.login_mobile h3{
+  /* margin-left: 5%;
+margin-top:65%; */
+bottom:4%;
+
+left:5%;
+position:fixed;
+}
+.login_mobile h1{
+  font-family:"Rubik Mono One", "sans-serif";
+  color:white;
+  margin-left:31%;
+  position:Absolute;
+  font-size:2em;
+ 
+}
+}
+
+/* max width for 540 */
+@media only screen and (min-width: 510px) and (max-width: 700px) {
+  .login{
+    display:none;
+  }
+  .login_mobile{
+    display:flex;
+   background:rgba(69,110,125,0.7)!important;
+   height:100vh;
+   width:100%;
+  }
+  .login_mobile video{
+   
+    height:30%;
+  border-radius: 50%;
+    position:relative;
+    margin-left:30%;
+    z-index:1000;
+    margin-top:12%;
+   
+  }
+  .login_errorbox{
+    background:linear-gradient(90deg, rgba(9,9,121,0.7) 45%, rgba(121,171,181,0.7) 88%);
+    color:white;
+ 
+    height:5%;
+    width:100%;
+    position:absolute;
+    margin-top:80%;
+   
+  }
+  .input_line{
+    border:none;
+   position:relative;
+    border-bottom:4px solid white;
+    background-color: transparent;
+resize: none;
+outline: none;
+font-size:1.5em;
+width:490px !important;
+
+color:white;
+
+margin-bottom:5%;
+
+}
+.login_mobile > form{
+  
+margin-left:-5%;
+  margin-top:50%;
+  position:absolute;
+}
+
+.login_mobile .button {
+  z-index:100;
+  margin-left:30%;
+ margin-top:17%;
+  width:50%;
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgb(2, 53, 65) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+  .login_mobile.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.login_mobile .button:hover, .homescreen .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.login_mobile .button:hover::before, .homescreen .button:focus::before {
+  opacity: 1;
+}
+
+.login_mobile .button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.login_mobile .button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.login_mobile h3{
+  /* margin-left: 5%;
+margin-top:65%; */
+bottom:3%;
+
+left:5%;
+position:fixed;
+}
+.login_mobile h1{
+  font-family:"Rubik Mono One", "sans-serif";
+  color:white;
+  margin-left:34%;
+  position:Absolute;
+  font-size:2em;
+ 
+}
+
+ }
+
+
+
+
+ @media only screen and (min-width: 700px) and (max-width: 1000px){
+  .login{
+    display:none;
+  }
+  .login_mobile{
+    display:flex;
+   background:rgba(69,110,125,0.7)!important;
+   height:100vh;
+   width:100%;
+  }
+  .login_mobile video{
+   
+    height:30%;
+  border-radius: 50%;
+    position:relative;
+    margin-left:30%;
+    z-index:1000;
+    margin-top:8%;
+   
+  }
+  .login_errorbox{
+    background:linear-gradient(90deg, rgba(9,9,121,0.7) 45%, rgba(121,171,181,0.7) 88%);
+    color:white;
+ 
+    height:5%;
+    width:100%;
+    position:absolute;
+    margin-top:80%;
+   
+  }
+  .input_line{
+    border:none;
+   position:relative;
+    border-bottom:4px solid white;
+    background-color: transparent;
+resize: none;
+outline: none;
+font-size:1.5em;
+width:490px !important;
+
+color:white;
+
+margin-bottom:5%;
+
+}
+.login_mobile > form{
+  
+margin-left:7%;
+  margin-top:50%;
+  position:absolute;
+}
+
+.login_mobile .button {
+  z-index:100;
+  margin-left:37%;
+ margin-top:23%;
+  width:50%;
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgb(2, 53, 65) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+  .login_mobile.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.login_mobile .button:hover, .homescreen .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.login_mobile .button:hover::before, .homescreen .button:focus::before {
+  opacity: 1;
+}
+
+.login_mobile .button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.login_mobile .button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.login_mobile h3{
+  /* margin-left: 5%;
+margin-top:65%; */
+bottom:3%;
+
+left:25%;
+position:fixed;
+}
+.login_mobile h1{
+  font-family:"Rubik Mono One", "sans-serif";
+  color:white;
+  margin-left:40%;
+  position:Absolute;
+  font-size:2em;
+ 
+}
+
+
+ }

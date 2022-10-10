@@ -21,6 +21,7 @@ setError(err.message)
 
 }
     return ( 
+        <div>
         <div className="home">
             {/* <video src="poolbgvideo.mp4" muted loop autoPlay/> */}
             <div className="signin_grid">
@@ -30,7 +31,7 @@ setError(err.message)
                     <p>The ultimate meeting ground of inventors and investors</p>
                 </div>
                 <div className="grid_two">
-                  {error && <div>{error}</div>}  
+                  {error && <div className="errorbox">{error}</div>}  
                     <h1>Sign Up</h1>
                     <form onSubmit={handleSubmit}>
                         
@@ -50,7 +51,33 @@ setError(err.message)
               
 
             </div>
+            
         </div>
+
+        <div className="home_mobile">
+        <h1>Pool</h1>
+        <br></br>
+      <video src="poollogo.mp4" muted loop autoPlay/>
+      <br></br>
+    
+        {error && <div className="errorbox">{error}</div>}  
+            
+            <form onSubmit={handleSubmit}>
+                 
+                <input type="text"  className="input_line" placeholder="E-mail address" onChange={(e)=>setEmail(e.target.value)}></input>
+                <br/>
+                <input
+                className="input_line"
+                onChange={(e)=>setPassword(e.target.value)}
+                 type="password"  placeholder="Password"></input>
+                <br/>
+                <button className="button" >Sign Up</button>
+                <br></br>
+              <Link to ="/login"> <h3 >Already on Pool? Sign In</h3></Link>
+              
+                </form>
+    </div>
+    </div>
      );
 }
  
