@@ -50,7 +50,7 @@ onChange={(e)=>setPassword(e.target.value)}
 <br/>
  <button className="button">Log In</button>
 <br></br>
-<Link to ="/" >  <h3>Not on Pool? Create An Account </h3></Link>
+<Link to ="/" >  <h3 >Not on Pool? Create An Account </h3></Link>
 </form>
                 </div>
            
@@ -58,13 +58,13 @@ onChange={(e)=>setPassword(e.target.value)}
             </div>
         </div>
         <div className="login_mobile">
-        <h1>Pool</h1>
+        {/* <h1>Pool</h1>
         <br></br>
       <video src="poollogo.mp4" muted loop autoPlay/>
       <br></br>
     
         {error && <div className="login_errorbox">{error}</div>}  
-            {/* <h1>Sign Up</h1> */}
+           
             <form onSubmit={handleSubmit}>
                  
             <input type="text" className="input_line" 
@@ -79,7 +79,13 @@ onChange={(e)=>setPassword(e.target.value)}
                 <br></br>
                 <Link to ="/" >  <h3>Not on Pool? Create An Account </h3></Link>
               
-                </form>
+                </form> */}
+                 
+                <p style={{margin:"auto",width:"50%",padding:10}}>
+                   
+                <h4 style={{color:"white", fontFamily:"Times New Roman",textAlign:"center"}}>This deployed web version of Pool:Beta One can only be viewed on a laptop. Reload the link on your laptop to interact with the app. Subscribe to the CZK Code YouTube channel to get notified when the mobile version is deployed.</h4>
+    <a style={{ marginLeft:"20",width:"100%",padding:10, fontSize:"1.2em" ,textAlign:"center"}}href="https://www.youtube.com/watch?v=qYOqGp23Z8k">Click to Watch Video on Pool:Beta One </a>
+    </p>
     </div>
      
         </div>

@@ -23,7 +23,7 @@ export default function DeletePost({ id, imageUrl }) {
       <button
        
         onClick={handleDelete}
-        style={{ background:"red" }}
+        style={{ background:"whitesmoke" }}
       > Delete </button>
     </div>
   );

@@ -13,9 +13,9 @@ const Navbar = () => {
     const [user] = useAuthState(auth)
     console.log(user)
   return (
-    <div className={style.nav}>
+    <div className={style.nav} >
       <h1 className={style.heading}>Pool Chat</h1>
-      <p>Connect with inventors and investors</p>
+    
       {user ? <LogOut /> : <SignIn />}
 
     </div>

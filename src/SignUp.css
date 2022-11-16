@@ -148,13 +148,14 @@ margin-top:7%;
       opacity: 0;
     }
   }
-  .home h3{
+  .login h3{
     margin-top:5%;
     color:white;
     font-size:1.6em;
     text-decoration:underline;
     margin-left:15%;
     cursor:pointer;
+    
   }
   .grid_one video{
     width:50%;

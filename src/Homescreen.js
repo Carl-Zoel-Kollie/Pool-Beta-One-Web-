@@ -55,7 +55,12 @@ setError(err.message)
         </div>
 
         <div className="home_mobile">
-        <h1>Pool</h1>
+        <p style={{margin:"auto",width:"50%",padding:10}}>
+                   
+                   <h4 style={{color:"white", fontFamily:"Times New Roman",textAlign:"center"}}>This deployed web version of Pool:Beta One can only be viewed on a laptop. Reload the link on your laptop to interact with the app. Subscribe to the CZK Code YouTube channel to get notified when the mobile version is deployed.</h4>
+       <a style={{ marginLeft:"20",width:"100%",padding:10, fontSize:"1.2em" ,textAlign:"center"}}href="https://www.youtube.com/watch?v=qYOqGp23Z8k">Click to Watch Video on Pool:Beta One </a>
+       </p>
+        {/* <h1>Pool</h1>
         <br></br>
       <video src="poollogo.mp4" muted loop autoPlay/>
       <br></br>
@@ -75,7 +80,7 @@ setError(err.message)
                 <br></br>
               <Link to ="/login"> <h3 >Already on Pool? Sign In</h3></Link>
               
-                </form>
+                </form> */}
     </div>
     </div>
      );

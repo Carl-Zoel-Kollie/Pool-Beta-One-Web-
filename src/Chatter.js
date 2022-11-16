@@ -2,15 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import Message from './Message';
 import SendMessage from './SendMessage';
 import { db } from './firebase';
-import './index.css';
 import { query, collection, orderBy, onSnapshot } from 'firebase/firestore';
 
 const style = {
   main: `flex flex-col p-[10px]`,
-
 };
 
-const Chatter = () => {
+const Chat = () => {
   const [messages, setMessages] = useState([]);
   const scroll = useRef();
 
@@ -28,17 +26,17 @@ const Chatter = () => {
 
   return (
     <>
-      <main className={style.main} style={{backgroundColor:"white"}}>
+      <main className={style.main} >
         {messages &&
           messages.map((message) => (
             <Message key={message.id} message={message} />
           ))}
       </main>
-      {/* Send Message Compoenent */}
-      <SendMessage scroll={scroll}  />
+     
+      <SendMessage scroll={scroll} />
       <span ref={scroll}></span>
     </>
   );
 };
 
-export default Chatter;
+export default Chat;
